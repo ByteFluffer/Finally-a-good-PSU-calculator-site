@@ -1,0 +1,102 @@
+#html, #body {
+  width: auto;
+  height: 100%;
+  min-height: 100%;
+  background-color: black;
+}
+
+#main_text {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: rgb(46, 42, 42);
+  background-size: cover;
+  width: 100%;
+}
+
+#main_form {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: rgb(54, 48, 48);
+  background-size: cover;
+  width: 100%;
+}
+
+#icon_hardware {
+  text-align: center;
+}
+
+#icon_hardware img {
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  
+}
+
+#icon_hardware h3 {
+  display: inline;
+  padding-top: 50%;
+}
+
+#icon_hardware_second {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#icon_hardware_second img {
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  
+}
+
+#icon_hardware_second h3 {
+  display: inline;
+  padding-top: 50%;
+}
+
+
+#row_forms {
+  max-width: 80%;
+  float: middle;
+}
+
+.form-select {
+  color: whitesmoke;
+  background-color: rgb(77, 66, 66);
+  border: 6px solid transparent;
+  border-radius: 10%;
+}
+
+#form_submission {
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  background: rgb(54, 48, 48);
+  background-size: cover;
+}
+
+#total_form {
+  align-items: left;
+  color: white;
+  background: rgb(54, 48, 48);
+  padding-bottom: 3%;
+}
+
+#user_reactions {
+  align-items: left;
+  color: white;
+  background: rgb(46, 42, 42);
+
+  padding-bottom: 2%;
+}
+
+#user_reactions h4{
+  padding: 2%;
+}
+
+#sticky-footer {
+  background: rgb(54, 48, 48);
+}
+
