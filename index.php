@@ -108,7 +108,7 @@
 
                             <div class="col-sm">
                                 <h6>Merk:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
+                                <select class="form-select" id="">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -117,7 +117,7 @@
 
                             <div class="col-sm">
                                 <h6>Series:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
+                                <select class="form-select" aria-label="select" id="">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
