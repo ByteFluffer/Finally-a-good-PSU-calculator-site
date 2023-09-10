@@ -25,7 +25,7 @@
                     <div class="container">
                         <div class="row" id="row_forms">
 
-                            <div class="col-sm">
+                            <div class="col-sm 2">
                                 <h6>Merk:</h6>
                                 <select class="form-select" aria-label="select" id="select_cpu_brand">
                                     <option value="amd">AMD</option>
@@ -39,7 +39,7 @@
                                 </select>
                             </div>
 
-                            <div class="col-sm">
+                            <div class="col-sm 1">
                                 <h6>Model:</h6>
                                 <select class="form-select" aria-label="select" id="select_form">
                                 </select>
@@ -57,7 +57,7 @@
 
                             <div class="col-sm">
                                 <h6>RAM:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
+                                <select class="form-select" aria-label="select" id="select_system_ram">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -65,8 +65,8 @@
                             </div>
 
                             <div class="col-sm">
-                                <h6>M.2 SSD:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
+                                <h6>SSD:</h6>
+                                <select class="form-select" aria-label="select" id="select_system_ssd">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -75,7 +75,7 @@
 
                             <div class="col-sm">
                                 <h6>FANS:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
+                                <select class="form-select" aria-label="select" id="select_system_fans">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -84,7 +84,7 @@
 
                             <div class="col-sm">
                                 <h6>HDD:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
+                                <select class="form-select" aria-label="select" id="select_system_hdd">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -108,28 +108,22 @@
 
                             <div class="col-sm">
                                 <h6>Merk:</h6>
-                                <select class="form-select" id="">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" id="select_gpu_brand">
+                                    <option selected disabled>Kies</option>
                                 </select>
                             </div>
 
                             <div class="col-sm">
                                 <h6>Series:</h6>
-                                <select class="form-select" aria-label="select" id="">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" aria-label="select" id="select_gpu_series">
+                                    <option selected disabled>Kies</option>
                                 </select>
                             </div>
 
                             <div class="col-sm">
                                 <h6>Model:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" aria-label="select" id="select_gpu_model">
+                                    <option selected disabled>Kies</option>
                                 </select>
                             </div>
                         </div>
@@ -145,19 +139,14 @@
 
                             <div class="col-sm">
                                 <h6>Type:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" aria-label="select" id="select_cooling_type">
+                                    <option selected disabled>Kies</option>
                                 </select>
                             </div>
 
                             <div class="col-sm">
                                 <h6>Formaat:</h6>
-                                <select class="form-select" aria-label="select" id="select_form">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" aria-label="select" id="select_cooling_formfactor">
                                 </select>
                             </div>
                         </div>
@@ -172,7 +161,7 @@
 
         <hr>
 
-        <button type="button" class="btn btn-primary">Bereken wattage</button>  
+        <button type="button" id="form_submit" class="btn btn-primary">Bereken wattage</button>  
 
         <button type="button" class="btn btn-primary disabled">Deel je ervaring</button>  
 
@@ -193,15 +182,24 @@
     </div>
 
 
-    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-        <div class="container text-center">
-            <p>Copyright &copy; <?php echo date('Y');?> KelvinCodes</p>
-        </div>
-    </footer>
-
 
 <script src="assets/js/main.js"></script>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">&copy; <?php echo date('Y');?> KelvinCodes</span>
+    </div>
 
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    </ul>
+  </footer>
+</div>
 
 </body>
 </html>
